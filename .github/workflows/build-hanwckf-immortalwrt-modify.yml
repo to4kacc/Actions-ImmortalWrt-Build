@@ -46,7 +46,7 @@ jobs:
       working-directory: /mnt/workdir
       run: |
         df -hT $PWD
-        git clone -b 2410 --single-branch --filter=blob:none https://github.com/padavanonly/immortalwrt-mt798x-24.10 immortalwrt-mt798x-24.10 immortalwrt
+        git clone -b 2410 --single-branch --filter=blob:none https://github.com/padavanonly/immortalwrt-mt798x-24.10 immortalwrt
         ln -sf /mnt/workdir/immortalwrt $GITHUB_WORKSPACE/immortalwrt
 
     - name: Load custom configuration
